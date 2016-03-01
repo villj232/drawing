@@ -2,11 +2,21 @@
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
+  background("black");
+  drawRectangles();
+  drawTriangles();
+  drawRedlight();
+  drawAandbbuttons();
+  drawGreybuttons();
+  drawSpeaker();
+
 }
 
-function draw(){
-  background("black");
 
+
+
+
+  function drawRectangles(){
   fill("#FFD700");
   rect(400,100,300,500,10);
   fill("black");
@@ -18,20 +28,40 @@ function draw(){
   rect(420,438,80,25);
   rect(448,410,25,80);
   fill("#303030");
+}
+
+
+  function drawTriangles(){
   triangle(451,430,461,415,471,430);
   triangle(451,472,461,487,471,472);
   triangle(437,461,425,451,437,441);
   triangle(484,461,497,451,484,441);
+}
+
+
+  function drawRedlight(){
   fill("red");
   ellipse(430,200,8,8)
+}
+
+
+ function drawAandbbuttons(){
   fill("black");
   ellipse(610,470,30,30);
   ellipse(660,450,30,30);
+}
+
+
+  function drawGreybuttons(){
   fill("#303030");
   ellipse(610,470,20,20);
   ellipse(660,450,20,20);
   ellipse(530,540,30,10);
   ellipse(580,540,30,10);
+}
+
+
+  function drawSpeaker(){
   fill("black");
   ellipse(640,550,6,6);
   ellipse(660,550,6,6);
@@ -50,16 +80,4 @@ function draw(){
   ellipse(640,590,6,6);
   ellipse(660,590,6,6);
   ellipse(680,590,6,6);
-
-
-
-
-
-
-
-
-
-
-
-
 }
